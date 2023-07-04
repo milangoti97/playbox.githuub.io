@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main-css.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+</head>
+
+<body>
+    <!-- =================================== header start ====================== -->
+    <header class="header">
+        <div class="container-fluid">
+            <div class="nav">
+                <a href="#"><img src="image/logo.svg" alt="logo" class="nav-logo"></a>
+                <div class="toggle-block">
+                    <a href="#" class="toggle" onclick="toggleNavMenu(event)" id="closeBtn">
+                        <div class="toggle-bar"></div>
+                        <div class="toggle-bar"></div>
+                        <div class="toggle-bar"></div>
+                    </a>
+                    <div class="nav-menu">
+                        <ul class="nav-list">
+                            <li class="nav-list-item"><a href="#">Lottery</a></li>
+                            <li class="nav-list-item"><a href="#">Subscribe</a></li>
+                            <li class="nav-list-item"><a href="#">How Playbox works</a></li>
+                            <li class="nav-list-item"><a href="#">Stories</a></li>
+                            <li class="nav-list-item"><a href="#" id="openBtn">Sign in/Register</a></li>
+                            <li class="nav-list-item"><a href="#">Centerfold</a></li>
+                        </ul>
+                    </div>
+                    <div id="modelContainer" class="model">
+                        <h2 class="model-heading">Sign in</h2>
+                        <form action="#" class="form">
+                            <div class="form-block">
+                                <label for="email" class="form-lable">Email</label>
+                                <input type="email" class="form-input" required>
+                            </div>
+                            <div class="form-block">
+                                <label for="password" class="form-lable">Password</label>
+                                <input type="password" class="form-input" required>
+                            </div>
+                            <div class="form-para-block">
+                                <p class="form-para">Not Registered? Create account <a href="javascript:void(0)" id="register-link" class="para-link">here</a></p>
+                                <p class="form-para">Forgot user/password? Click <a href="#" class="para-link">here</a></p>
+                                <a href="javascript:void(0)" class="play-btn form-play-btn">
+                                    <img src="image/play-webflow.svg" alt="" class="play-icon">
+                                </a>
+                                <!-- <div class="close-btn-block">
+                  <button id="closeBtn" class="sign-in-btn">Sign in</button>
+                </div> -->
+                                <div class="close-btn-block">
+                                    <!-- <button id="reg-closeBtn" class="sign-in-btn" >Register</button> -->
+                                    <input type="submit" value="Sign in" class="sign-in-btn">
+                                </div>
+                            </div>
+
+                        </form>
+
+
+                    </div>
+                    <div id="reg-modelContainer" class="regmodel">
+                        <h2 class="model-heading">Sign in</h2>
+                        <form action="#" class="form">
+                            <div class="form-block">
+                                <label for="fname" class="form-lable">First name</label>
+                                <input type="fname" class="form-input" required>
+                            </div>
+                            <div class="form-block">
+                                <label for="sname" class="form-lable">Surname</label>
+                                <input type="sname" class="form-input" required>
+                            </div>
+                            <div class="form-block">
+                                <label for="email" class="form-lable">Email</label>
+                                <input type="email" class="form-input" required>
+                            </div>
+                            <div class="form-block">
+                                <label for="password" class="form-lable">Password</label>
+                                <input type="password" class="form-input" required>
+                            </div>
+                            <div class="form-para-block">
+                                <!-- <p class="form-para">Not Registered? Create account </p><a id="register-link" class="para-link">here</a>
+                <p class="form-para">Forgot user/password? Click <a href="#" class="para-link">here</a></p> -->
+                                <a href="javascript:void(0)" class="play-btn form-play-btn" type="submit">
+                                    <img src="image/play-webflow.svg" alt="" class="play-icon">
+                                </a>
+                                <div class="close-btn-block">
+                                    <!-- <button id="reg-closeBtn" class="sign-in-btn" >Register</button> -->
+                                    <input type="submit" value="Register" class="sign-in-btn">
+                                </div>
+                            </div>
+
+                        </form>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- ======================== header end ========================= -->
+
+    <!-- ======================== hero section start =========================== -->
+    <section class="hero-section">
+        <div>
+            <div class="slider">
+                <div class="slide active">
+                    <video id="sliderVideo" class="slider-video" autoplay loop muted>
+            <source src="video/video-2.mp4" type="video/mp4">
+          </video>
+                    <div class="slide-content">
+                        <div class="slider-left-block">
+                            <h1 class="slider-heading">Playbox lottery</h1>
+                            <div class="hero-hours-block">
+                                <span>2</span> hours <span>4</span> mins <span>27</span> secs
+                            </div>
+                        </div>
+                        <div class="slider-right-block">
+                            <a href="javascript:void(0)" class="play-btn" id="slider-video-btn">
+                                <img src="image/play-webflow.svg" alt="" class="play-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <video id="sliderVideo2" class="slider-video" autoplay loop muted>
+            <source src="video/video-2.mp4" type="video/mp4">
+          </video>
+                    <div class="slide-content">
+                        <div class="slider-left-block">
+                            <h1 class="slider-heading">Playbox Subscribe</h1>
+                            <div class="hero-btn-block">
+                                <a href="#" class="primary-btn">Exclusive content</a>
+                                <a href="#" class="primary-btn">Value hook 2</a>
+                            </div>
+                        </div>
+                        <div class="slider-right-block">
+                            <a href="javascript:void(0)" class="play-btn" id="slider-video-btn2">
+                                <img src="image/play-webflow.svg" alt="" class="play-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ==================== hero section end ============================== -->
+
+
+    <!-- ====================== week section start ============================== -->
+    <section class="week-section">
+        <div class="week-video-block">
+            <video id="weekVideo" class="slider-video" autoplay loop muted>
+        <source src="video/video-2.mp4" type="video/mp4">
+      </video>
+        </div>
+        <div class="week-inner">
+            <div class="week-content">
+                <h2 class="section-heading">This weeks prize</h2>
+                <span class="big-para color-red">Girls name</span>
+                <p class="para">Enjoy a night of 5* luxury, with dinner at nice place and an overnight stay at Hotel swish.</p>
+            </div>
+        </div>
+        <div class="week-play-btn-block">
+            <a href="javascript:void(0)" class="play-btn week-play-btn" id="week-video-btn">
+                <img src="image/play-webflow.svg" alt="" class="play-icon">
+            </a>
+        </div>
+    </section>
+    <!-- ==================== week section end ======================= -->
+
+
+    <!-- ==================== subscribe section start ============================= -->
+    <section class="subscribe-section">
+        <div class="subscribe-inner">
+            <a href="#" class="primary-btn">Playbox Lottery</a>
+            <div class="subscribe-slider-block">
+                <h2 class="section-heading">Playbox Subscription</h2>
+                <div class="card-slider">
+                    <div class="video-card">
+                        <video id="videoCard1" class="card-video" autoplay loop muted>
+              <source src="video/card1.mp4" type="video/mp4">
+            </video>
+                        <div class="video-card-btn-block">
+                            <a href="javascript:void(0)" class="video-card-play-btn" id="video-card-play-1">
+                                <img src="image/play-webflow.svg" alt="" class="vide-card-play-icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <video id="videoCard2" class="card-video" autoplay loop muted>
+              <source src="video/card2.mp4" type="video/mp4">
+            </video>
+                        <div class="video-card-btn-block">
+                            <a href="javascript:void(0)" class="video-card-play-btn" id="video-card-play-2">
+                                <img src="image/play-webflow.svg" alt="" class="vide-card-play-icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <video id="videoCard3" class="card-video" autoplay loop muted>
+              <source src="video/card3.mp4" type="video/mp4">
+            </video>
+                        <div class="video-card-btn-block">
+                            <a href="javascript:void(0)" class="video-card-play-btn" id="video-card-play-3">
+                                <img src="image/play-webflow.svg" alt="" class="vide-card-play-icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <video id="videoCard4" class="card-video" autoplay loop muted>
+              <source src="video/card4.mp4" type="video/mp4">
+            </video>
+                        <div class="video-card-btn-block">
+                            <a href="javascript:void(0)" class="video-card-play-btn" id="video-card-play-4">
+                                <img src="image/play-webflow.svg" alt="" class="vide-card-play-icon">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="video-card">
+                        <video id="videoCard5" class="card-video" autoplay loop muted>
+              <source src="video/card5.mp4" type="video/mp4">
+            </video>
+                        <div class="video-card-btn-block">
+                            <a href="javascript:void(0)" class="video-card-play-btn" id="video-card-play-5">
+                                <img src="image/play-webflow.svg" alt="" class="vide-card-play-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="primary-btn">Playbox Lottery</a>
+            </div>
+
+        </div>
+    </section>
+    <!-- =================== subscribe section end ========================= -->
+
+
+    <!-- =============== video section start ================= -->
+    <section class="video-section">
+        <div>
+            <video id="sectionVideo" class="video-block" autoplay loop muted>
+        <source src="video/video-2.mp4" type="video/mp4">
+      </video>
+        </div>
+        <div class="video-btn-block">
+            <a href="javascript:void(0)" class="play-btn" id="video-play-btn">
+                <img src="image/play-webflow.svg" alt="" class="play-icon">
+            </a>
+        </div>
+    </section>
+    <!-- =============== video section start ================= -->
+
+
+
+    <!-- ================ how playbox section start ==================== -->
+    <section class="how-section">
+        <div class="how-inner">
+            <h2 class="section-heading text-dark mb-100">How PlayBox Works?</h2>
+            <div class="how-para-block">
+                <p class="para text-dark mb-100">Lottery Explanation here of how it works. No more than 3 lines of text if possible.
+                </p>
+                <p class="para text-dark">Subscription Explanation here of how it works. No more than 3 lines of text if possible.
+                </p>
+            </div>
+            <div class="how-btn-block">
+                <a href="#" class="primary-btn">Exclusive content</a>
+                <a href="#" class="primary-btn">Value hook 2</a>
+            </div>
+        </div>
+    </section>
+    <!-- ================ how playbox section end ==================== -->
+
+
+    <!-- ======================== footer start ======================= -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="footer-link-block">
+                <ul class="footer-list">
+                    <li class="footer-item"><a href="#" class="footer-link">Stories</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">About us</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Contact us</a></li>
+                    <li class="footer-item"><a href="#" class="footer-link">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-inner">
+                <div class="footer-logo">
+                    <a href="#" class="footer-logo-link">
+                        <img src="image/footer-logo.svg" alt="footer logo">
+                    </a>
+                    <div class="footer-social-block">
+                        <h3 class="social-heading">Follow Our Socials</h3>
+                        <img src="image/instagram.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <!-- ======================== footer end ======================= -->
+
+
+    <!-- menu script  -->
+    <script>
+        function toggleNavMenu(event) {
+            event.preventDefault(); // Prevent the default link behavior (e.g., scrolling to the top)
+
+            var navMenu = document.querySelector('.nav-menu');
+            navMenu.classList.toggle('active');
+        }
+    </script>
+
+    <!-- hero slider script -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const slides = document.querySelectorAll(".slide");
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                slides.forEach(function(slide) {
+                    slide.classList.remove("active");
+                });
+
+                slides[index].classList.add("active");
+            }
+
+            function nextSlide() {
+                currentSlide = (currentSlide + 1) % slides.length;
+                showSlide(currentSlide);
+            }
+
+            setInterval(nextSlide, 10000); // Change slide every 5 seconds (adjust as needed)
+        });
+    </script>
+    <!-- card slider script  -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $('.card-slider').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+            responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            }, {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }, {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }]
+        });
+    </script>
+
+    <!-- ===== hero video player script ====== -->
+
+    <script type="text/javascript">
+        var playButton = document.getElementById("slider-video-btn");
+        playButton.addEventListener("click", function() {
+            if (sliderVideo.paused == true) {
+                sliderVideo.play();
+            } else {
+                sliderVideo.pause();
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        var playButton = document.getElementById("slider-video-btn2");
+        playButton.addEventListener("click", function() {
+            if (sliderVideo2.paused == true) {
+                sliderVideo2.play();
+            } else {
+                sliderVideo2.pause();
+            }
+        });
+    </script>
+
+    <!-- ======== week video player script ========= -->
+
+    <script type="text/javascript">
+        var playButton = document.getElementById("week-video-btn");
+        playButton.addEventListener("click", function() {
+            if (weekVideo.paused == true) {
+                weekVideo.play();
+            } else {
+                weekVideo.pause();
+            }
+        });
+    </script>
+
+    <!-- ============ vide slider player script =============== -->
+
+    <script type="text/javascript">
+        var playButton = document.getElementById("video-card-play-1");
+        playButton.addEventListener("click", function() {
+            if (videoCard1.paused == true) {
+                videoCard1.play();
+            } else {
+                videoCard1.pause();
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        var playButton = document.getElementById("video-card-play-2");
+        playButton.addEventListener("click", function() {
+            if (videoCard2.paused == true) {
+                videoCard2.play();
+            } else {
+                videoCard2.pause();
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        var playButton = document.getElementById("video-card-play-3");
+        playButton.addEventListener("click", function() {
+            if (videoCard3.paused == true) {
+                videoCard3.play();
+            } else {
+                videoCard3.pause();
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        var playButton = document.getElementById("video-card-play-4");
+        playButton.addEventListener("click", function() {
+            if (videoCard4.paused == true) {
+                videoCard4.play();
+            } else {
+                videoCard4.pause();
+            }
+        });
+    </script>
+    <script type="text/javascript">
+        var playButton = document.getElementById("video-card-play-5");
+        playButton.addEventListener("click", function() {
+            if (videoCard5.paused == true) {
+                videoCard5.play();
+            } else {
+                videoCard5.pause();
+            }
+        });
+    </script>
+
+    <!-- ========= video section play script =========  -->
+
+    <script type="text/javascript">
+        var playButton = document.getElementById("video-play-btn");
+        playButton.addEventListener("click", function() {
+            if (sectionVideo.paused == true) {
+                sectionVideo.play();
+            } else {
+                sectionVideo.pause();
+            }
+        });
+    </script>
+
+
+    <script>
+        // Get references to the open and close buttons
+        const openBtn = document.getElementById('openBtn');
+        const closeBtn = document.getElementById('closeBtn');
+        const modelContainer = document.getElementById('modelContainer');
+
+        // Event listener for the open button
+        openBtn.addEventListener('click', function() {
+            modelContainer.style.display = 'block';
+        });
+
+        // Event listener for the close button
+        closeBtn.addEventListener('click', function() {
+            modelContainer.style.display = 'none';
+        });
+    </script>
+    <script>
+        // Get references to the open and close buttons
+        const regopenBtn = document.getElementById('register-link');
+        const regcloseBtn = document.getElementById('closeBtn');
+        const regmodelContainer = document.getElementById('reg-modelContainer');
+
+        // Event listener for the open button
+        regopenBtn.addEventListener('click', function() {
+            regmodelContainer.style.display = 'block';
+        });
+
+        // Event listener for the close button
+        regcloseBtn.addEventListener('click', function() {
+            regmodelContainer.style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
